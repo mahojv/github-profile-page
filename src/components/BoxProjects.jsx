@@ -22,6 +22,7 @@ export default function BoxProjects({ rep }) {
                     return (
                         <CardProject
                             key={project.id}
+                            html_url={project.html_url}
                             name={project.name}
                             description={project.description}
                             stars={project.stargazers_count}

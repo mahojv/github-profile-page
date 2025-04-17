@@ -17,7 +17,7 @@ export default function Modal({ quickSearch, setSearch, setToggle }) {
     return (
         <>
 
-            <div className='z-50 w-[500px] hidden lg:flex items-center gap-4 bg-fondoCardBodyColor p-2 rounded-xl absolute top-21' onClick={quickSearchSelect}>
+            <div className='z-50 w-[500px] hidden lg:flex items-center gap-4 bg-fondoCardBodyColor p-2 rounded-xl absolute top-21 cursor-pointer' onClick={quickSearchSelect}>
                 <figure className='w-[100px] overflow-hidden rounded-xl'>
                     <img className='object-cover w-full' src={response?.avatar_url} alt="" /></figure>
                 <div>

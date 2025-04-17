@@ -1,12 +1,12 @@
 import React from 'react'
 import useFecha from '../hooks/useFecha'
 
-export default function CardProject({ name, description, stars, mit, forks, update }) {
+export default function CardProject({html_url, name, description, stars, mit, forks, update }) {
 
   const elapsed = useFecha(update)
 
   return (
-    <>
+    <a href={html_url} target='_blank' className='cursor-pointer'>
       <div role='card' className=' rounded-lg repoCard w-full  flex gap-3 flex-col px-3 justify-center py-5 '>
         <h3 className='text-2xl text-cardTextColor'>{name}</h3>
         <p >{description}</p>
@@ -38,6 +38,6 @@ export default function CardProject({ name, description, stars, mit, forks, upda
           </span>
         </div>
       </div>
-    </>
+    </a>
   )
 }
