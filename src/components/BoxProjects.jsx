@@ -14,9 +14,7 @@ export default function BoxProjects({ rep }) {
                 <p>Cargando...</p>
             }
 
-            {error &&
-                <p>Error: {error.message}</p>
-            }
+    
 
             {Array.isArray(response) && response.length > 0 &&
 
