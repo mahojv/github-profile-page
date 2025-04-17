@@ -1,9 +1,27 @@
 import React from 'react'
 import Modal from './components/modal'
 import CardProject from './components/CardProject'
+import useData from "./hooks/useData";
+import BoxProjects from './components/BoxProjects';
 
 export default function App() {
+
+  let url = "https://api.github.com/users/github"
+
+  const { loading, error, array } = useData(url)
+
+  const response = array
+ 
+
+// console.log(response)
+
+
   return (
+
+
+
+
+
     <div>
 
       <div className='z-0 w-full h-[190px]  flex flex-col items-center relative'>
@@ -17,12 +35,11 @@ export default function App() {
           <input className='placeholder:text-cardTextColor' type="text" placeholder='Username' />
         </div>
 
-
-        <Modal />
-
-
-
-
+        <Modal
+        img= {response?.avatar_url}
+        name={response?.name}
+        bio= {response?.bio}
+        />
 
 
       </div>
@@ -35,7 +52,7 @@ export default function App() {
 
           <div className=' z-50 w-[120px] h-[120px] rounded-xl bg-fondoGrisColor flex justify-center items-center'>
             <figure role='profile img ' className='w-[100px] overflow-hidden rounded-xl'>
-              <img src="./resources/github.png" alt="" className='object-cover ' />
+              <img src={response?.avatar_url} alt="" className='object-cover ' />
             </figure>
           </div>
 
@@ -45,7 +62,7 @@ export default function App() {
               <div className='border-r border-white text-center flex justify-center  px-4 '>
                 <p  > followers</p>
               </div>
-              <p className='  text-center flex justify-center  px-4 ' > 27839</p>
+              <p className='  text-center flex justify-center  px-4 ' > {response?.followers}</p>
 
             </div>
 
@@ -53,7 +70,7 @@ export default function App() {
               <div className='border-r border-white text-center flex justify-center  px-4 '>
                 <p  > folowing</p>
               </div>
-              <p className='  text-center flex justify-center  px-4 ' > 0</p>
+              <p className='  text-center flex justify-center  px-4 ' > {response?.following}</p>
 
             </div>
 
@@ -61,7 +78,7 @@ export default function App() {
               <div className='border-r border-white text-center flex justify-center  px-4 '>
                 <p  > location</p>
               </div>
-              <p className='  text-center flex justify-center  px-4 ' > san francisco, ca</p>
+              <p className='  text-center flex justify-center  px-4 ' > {response?.location}</p>
 
             </div>
 
@@ -71,21 +88,14 @@ export default function App() {
 
         <div>
           <div className='mt-9 text-cardTextColor'>
-            <h1 className='text-4xl '>Github</h1>
-            <h2 >how people bluild software</h2>
+            <h1 className='text-4xl '>{response?.name}</h1>
+            <h2 >{response?.bio}</h2>
           </div>
 
 
-          <div role='card section' className='mt-9 flex flex-col items-center gap-10 lg:grid  lg:grid-cols-2'>
-
-
-            <CardProject />
-            <CardProject />
-            <CardProject />
-            <CardProject />
-
-
-          </div>
+          <BoxProjects
+          rep={response?.repos_url}
+          />
 
 
 
@@ -105,7 +115,7 @@ export default function App() {
 
       </main>
       <footer className='mt-10 flex justify-center items-center py-6 '>
-        <p className='text-cardTextColor' >view all repositories</p>
+        <a className='text-cardTextColor' href={response?.html_url} >view all repositories</a>
       </footer>
 
 
