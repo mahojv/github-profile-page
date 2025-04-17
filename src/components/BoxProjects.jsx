@@ -7,23 +7,18 @@ export default function BoxProjects({ rep }) {
     const { loading, error, array } = useData(rep)
     const response = array
 
-   
-
-
-
-
-
-
-
     return (
         <div role='card section' className='mt-9 flex flex-col items-center gap-10 lg:grid  lg:grid-cols-2'>
 
-            {loading && <p>Cargando...</p>}
+            {loading &&
+                <p>Cargando...</p>
+            }
 
+            {error &&
+                <p>Error: {error.message}</p>
+            }
 
-            {error && <p>Error: {error.message}</p>}
-
-            {Array.isArray(response) && response.length > 0  &&
+            {Array.isArray(response) && response.length > 0 &&
 
                 response.map((project) => {
                     return (
@@ -40,20 +35,7 @@ export default function BoxProjects({ rep }) {
                         />
                     )
                 })
-
-                
-
             }
-
-            
-
-
-
-
-
-
-
-
         </div>
     )
 }

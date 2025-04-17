@@ -3,10 +3,7 @@ import useFecha from '../hooks/useFecha'
 
 export default function CardProject({ name, description, stars, mit, forks, update }) {
 
-
-
   const elapsed = useFecha(update)
-
 
   return (
     <>
@@ -37,7 +34,6 @@ export default function CardProject({ name, description, stars, mit, forks, upda
             ) : (
               <p>Updated more than a month ago</p>
             )}
-
 
           </span>
         </div>
