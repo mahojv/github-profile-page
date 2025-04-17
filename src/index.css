@@ -1,1 +1,29 @@
-@import "tailwindcss"
+@import "tailwindcss";
+
+@theme{
+    
+    --color-bodyTextColor: #97A3B6;
+    --color-cardTextColor: #CDD5E0;
+    --color-fondoGrisColor: #20293A;
+    --color-fondoCardBodyColor: #111729;
+
+
+  
+  }
+
+  * {
+    font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+
+  }
+  
+.repoCard {
+    background: linear-gradient(95deg, #111729 3%, #1d1b48 99.61%);
+}
+
+body{
+    background-color: #20293A;
+    color: var(--color-bodyTextColor);
+}
