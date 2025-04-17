@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Modal from './components/modal'
+import Modal from "./components/Modal";
 import useData from "./hooks/useData";
 import BoxProjects from './components/BoxProjects';
 
