@@ -11,7 +11,7 @@ export default function CardProject({html_url, name, description, stars, mit, fo
         <h3 className='text-lg text-cardTextColor'>{name}</h3>
         <p className='text-sm' >{description}</p>
 
-        <div className='flex gap-3 items-center' >
+        <div className='flex gap-3 items-center text-cardTextColor' >
 
           {mit === "MIT" &&
             <span className='flex gap-1.5 text-sm items-center'>
