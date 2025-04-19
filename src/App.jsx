@@ -101,7 +101,7 @@ export default function App() {
         <div className=''>
           <div className='mt-[16px] text-cardTextColor'>
             <h1 className='text-[30px] '>{response?.name}</h1>
-            <h2 >{response?.bio}</h2>
+            <h2 className='mt-[2px]' >{response?.bio}</h2>
           </div>
 
 
