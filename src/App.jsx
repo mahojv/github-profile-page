@@ -43,11 +43,11 @@ export default function App() {
 
       <div className='z-0 w-full h-[200px]  flex flex-col items-center relative'>
         <div role='header' className='w-full'>
-          <figure role='imagen encabezado' className=' h-[230px] absolute w-full overflow-hidden' onClick={closeModal}>
+          <figure role='imagen encabezado' className=' h-[240px] absolute w-full overflow-hidden' onClick={closeModal}>
             <img className='object-cover  h-full w-full' src="./resources/hero-image-github-profile.jpg" alt="" />
           </figure>
         </div>
-        <div className=' z-40 min-w-[360px]  lg:w-[500px] h-[53px] rounded-xl bg-fondoGrisColor flex items-center gap-4 mt-6 px-4  ' role='search'>
+        <div className=' z-40 min-w-[360px]  lg:w-[500px] h-[53px] rounded-xl bg-fondoGrisColor flex items-center gap-4 mt-[34px] px-4  ' role='search'>
           <figure><img src="./resources/Search.svg" alt="" /></figure>
           <input className='placeholder:text-cardTextColor w-full h-full text-cardTextColor' type="text" placeholder='Username' onKeyDown={handleKeyDown} onClick={toggleFunction} onChange={quickSearchFunction} />
         </div>
@@ -62,7 +62,7 @@ export default function App() {
 
       </div>
 
-      <main className='px-7 sm:px-[90px] flex flex-col grow' onClick={closeModal}>
+      <main className='px-7 sm:px-[120px] flex flex-col grow' onClick={closeModal}>
         <div className=' flex flex-col lg:flex-row lg:items-center  gap-11'>
 
           <div className=' z-50 w-[120px] h-[120px] rounded-xl bg-fondoGrisColor flex justify-center items-center'>
@@ -73,7 +73,7 @@ export default function App() {
 
           <div role='infContainer' className='flex flex-wrap gap-4 lg:mt-9'>
 
-            <div className='bg-fondoCardBodyColor flex  gap-3 w-fit h-[50px] items-center justify-center rounded-xl  '>
+            <div className='bg-fondoCardBodyColor text-cardTextColor flex  gap-3 w-fit h-[50px] items-center justify-center rounded-xl  '>
               <div className='border-r border-white text-center flex justify-center  px-4 '>
                 <p  > followers</p>
               </div>
@@ -81,7 +81,7 @@ export default function App() {
 
             </div>
 
-            <div className='bg-fondoCardBodyColor flex  gap-3 w-fit h-[50px] items-center justify-center rounded-xl  '>
+            <div className='bg-fondoCardBodyColor text-cardTextColor flex  gap-3 w-fit h-[50px] items-center justify-center rounded-xl  '>
               <div className='border-r border-white text-center flex justify-center  px-4 '>
                 <p  > folowing</p>
               </div>
@@ -89,7 +89,7 @@ export default function App() {
 
             </div>
 
-            <div className='bg-fondoCardBodyColor flex  gap-3 w-fit h-[50px] items-center justify-center rounded-xl  '>
+            <div className='bg-fondoCardBodyColor text-cardTextColor flex  gap-3 w-fit h-[50px] items-center justify-center rounded-xl  '>
               <div className='border-r border-white text-center flex justify-center  px-4 '>
                 <p  > location</p>
               </div>
@@ -98,8 +98,8 @@ export default function App() {
           </div>
         </div>
 
-        <div>
-          <div className='mt-9 text-cardTextColor'>
+        <div className=''>
+          <div className='mt-[16px] text-cardTextColor'>
             <h1 className='text-4xl '>{response?.name}</h1>
             <h2 >{response?.bio}</h2>
           </div>
