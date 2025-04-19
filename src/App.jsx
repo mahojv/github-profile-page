@@ -47,7 +47,7 @@ export default function App() {
             <img className='object-cover  h-full w-full' src="./resources/hero-image-github-profile.jpg" alt="" />
           </figure>
         </div>
-        <div className=' z-40  w-[500px] h-[50px] rounded-xl bg-fondoGrisColor flex items-center gap-4 mt-6 px-4  ' role='search'>
+        <div className=' z-40 min-w-[360px]  lg:w-[500px] h-[53px] rounded-xl bg-fondoGrisColor flex items-center gap-4 mt-6 px-4  ' role='search'>
           <figure><img src="./resources/Search.svg" alt="" /></figure>
           <input className='placeholder:text-cardTextColor w-full h-full text-cardTextColor' type="text" placeholder='Username' onKeyDown={handleKeyDown} onClick={toggleFunction} onChange={quickSearchFunction} />
         </div>
@@ -62,7 +62,7 @@ export default function App() {
 
       </div>
 
-      <main className='px-[90px] flex flex-col grow' onClick={closeModal}>
+      <main className='px-7 sm:px-[90px] flex flex-col grow' onClick={closeModal}>
         <div className=' flex flex-col lg:flex-row lg:items-center  gap-11'>
 
           <div className=' z-50 w-[120px] h-[120px] rounded-xl bg-fondoGrisColor flex justify-center items-center'>
@@ -77,7 +77,7 @@ export default function App() {
               <div className='border-r border-white text-center flex justify-center  px-4 '>
                 <p  > followers</p>
               </div>
-              <p className='  text-center flex justify-center  px-4 ' > {response?.followers}</p>
+              <p className='  text-center flex justify-center pr-4 ' > {response?.followers}</p>
 
             </div>
 
@@ -85,7 +85,7 @@ export default function App() {
               <div className='border-r border-white text-center flex justify-center  px-4 '>
                 <p  > folowing</p>
               </div>
-              <p className='  text-center flex justify-center  px-4 ' > {response?.following}</p>
+              <p className='  text-center flex justify-center  pr-4 ' > {response?.following}</p>
 
             </div>
 
@@ -93,7 +93,7 @@ export default function App() {
               <div className='border-r border-white text-center flex justify-center  px-4 '>
                 <p  > location</p>
               </div>
-              <p className='  text-center flex justify-center  px-4 ' > {response?.location}</p>
+              <p className='  text-center flex justify-center  pr-4 ' > {response?.location}</p>
             </div>
           </div>
         </div>

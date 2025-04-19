@@ -7,7 +7,7 @@ export default function CardProject({html_url, name, description, stars, mit, fo
 
   return (
     <a href={html_url} target='_blank' className='cursor-pointer'>
-      <div role='card' className=' rounded-lg repoCard w-full  flex gap-3 flex-col px-3 justify-center py-5 '>
+      <div role='card' className=' rounded-lg repoCard  w-full   lg:max-w-none lg:max-h-none flex gap-3 flex-col px-3 justify-between lg:justify-center py-5  '>
         <h3 className='text-2xl text-cardTextColor'>{name}</h3>
         <p >{description}</p>
 
