@@ -74,7 +74,7 @@ export default function App() {
           <div role='infContainer' className='flex flex-wrap gap-[22px] lg:mt-9 text-sm'>
 
             <div className='bg-fondoCardBodyColor text-cardTextColor  flex  gap-3 w-fit h-[50px] items-center justify-center rounded-xl  '>
-              <div className='border-r border-white text-center flex justify-center  px-[23px] '>
+              <div className='border-r border-bodyTextColor text-center flex justify-center  px-[23px] '>
                 <p  > Followers</p>
               </div>
               <p className='  text-center flex justify-center pl-[13px] pr-[23px] ' > {response?.followers}</p>
@@ -82,7 +82,7 @@ export default function App() {
             </div>
 
             <div className='bg-fondoCardBodyColor text-cardTextColor flex  gap-3 w-fit h-[50px] items-center justify-center rounded-xl  '>
-              <div className='border-r border-white text-center flex justify-center px-[23px] '>
+              <div className='border-r border-bodyTextColor text-center flex justify-center px-[23px] '>
                 <p  > Folowing</p>
               </div>
               <p className='  text-center flex justify-center  pl-[13px] pr-[23px] ' > {response?.following}</p>
@@ -90,7 +90,7 @@ export default function App() {
             </div>
 
             <div className='bg-fondoCardBodyColor text-cardTextColor flex  gap-3 w-fit h-[50px] items-center justify-center rounded-xl  '>
-              <div className='border-r border-white text-center flex justify-center  px-[23px] '>
+              <div className='border-r border-bodyTextColor text-center flex justify-center  px-[23px] '>
                 <p  > Location</p>  
               </div>
               <p className='  text-center flex justify-center  pl-[13px] pr-[23px] ' > {response?.location}</p>

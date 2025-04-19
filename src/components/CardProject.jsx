@@ -30,9 +30,9 @@ export default function CardProject({html_url, name, description, stars, mit, fo
           </span>
           <span>
             {elapsed <= 31 ? (
-              <p className='text-xs text-center'>Updated {elapsed} days ago</p>
+              <p className='text-[10px] text-center'>Updated {elapsed} days ago</p>
             ) : (
-              <p className='text-xs text-center'>Updated more than a month ago</p>
+              <p className='text-[10px] text-center'>Updated more than a month ago</p>
             )}
 
           </span>
