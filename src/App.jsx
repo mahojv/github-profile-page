@@ -63,7 +63,7 @@ export default function App() {
       </div>
 
       <main className='px-7 sm:px-[120px] flex flex-col grow' onClick={closeModal}>
-        <div className=' flex flex-col lg:flex-row lg:items-center  gap-11'>
+        <div className=' flex flex-col lg:flex-row lg:items-center  gap-[24px]'>
 
           <div className=' z-50 w-[120px] h-[120px] rounded-xl bg-fondoGrisColor flex justify-center items-center'>
             <figure role='profile img ' className='w-[100px] overflow-hidden rounded-xl'>
@@ -71,29 +71,29 @@ export default function App() {
             </figure>
           </div>
 
-          <div role='infContainer' className='flex flex-wrap gap-4 lg:mt-9 text-sm'>
+          <div role='infContainer' className='flex flex-wrap gap-[22px] lg:mt-9 text-sm'>
 
             <div className='bg-fondoCardBodyColor text-cardTextColor  flex  gap-3 w-fit h-[50px] items-center justify-center rounded-xl  '>
-              <div className='border-r border-white text-center flex justify-center  px-4 '>
+              <div className='border-r border-white text-center flex justify-center  px-[23px] '>
                 <p  > Followers</p>
               </div>
-              <p className='  text-center flex justify-center pr-4 ' > {response?.followers}</p>
+              <p className='  text-center flex justify-center pl-[13px] pr-[23px] ' > {response?.followers}</p>
 
             </div>
 
             <div className='bg-fondoCardBodyColor text-cardTextColor flex  gap-3 w-fit h-[50px] items-center justify-center rounded-xl  '>
-              <div className='border-r border-white text-center flex justify-center  px-4 '>
+              <div className='border-r border-white text-center flex justify-center px-[23px] '>
                 <p  > Folowing</p>
               </div>
-              <p className='  text-center flex justify-center  pr-4 ' > {response?.following}</p>
+              <p className='  text-center flex justify-center  pl-[13px] pr-[23px] ' > {response?.following}</p>
 
             </div>
 
             <div className='bg-fondoCardBodyColor text-cardTextColor flex  gap-3 w-fit h-[50px] items-center justify-center rounded-xl  '>
-              <div className='border-r border-white text-center flex justify-center  px-4 '>
+              <div className='border-r border-white text-center flex justify-center  px-[23px] '>
                 <p  > Location</p>  
               </div>
-              <p className='  text-center flex justify-center  pr-4 ' > {response?.location}</p>
+              <p className='  text-center flex justify-center  pl-[13px] pr-[23px] ' > {response?.location}</p>
             </div>
           </div>
         </div>
