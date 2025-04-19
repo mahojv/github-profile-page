@@ -66,31 +66,31 @@ export default function App() {
         <div className=' flex flex-col lg:flex-row lg:items-center  gap-[24px]'>
 
           <div className=' z-50 w-[120px] h-[120px] rounded-xl bg-fondoGrisColor flex justify-center items-center'>
-            <figure role='profile img ' className='w-[100px] overflow-hidden rounded-xl'>
+            <figure role='profile img ' className='w-[105px] overflow-hidden rounded-xl'>
               <img src={response?.avatar_url} alt="" className='object-cover ' />
             </figure>
           </div>
 
           <div role='infContainer' className='flex flex-wrap gap-[22px] lg:mt-9 text-sm'>
 
-            <div className='bg-fondoCardBodyColor text-cardTextColor  flex  gap-3 w-fit h-[50px] items-center justify-center rounded-xl  '>
-              <div className='border-r border-bodyTextColor text-center flex justify-center  px-[23px] '>
+            <div className='bg-fondoCardBodyColor text-cardTextColor  flex  gap-3 w-fit h-[53px] items-center justify-center rounded-xl  '>
+              <div className='border-r font-medium border-bodyTextColor text-center flex justify-center  px-[23px] h-[70%] items-center '>
                 <p  > Followers</p>
               </div>
               <p className='  text-center flex justify-center pl-[13px] pr-[23px] ' > {response?.followers}</p>
 
             </div>
 
-            <div className='bg-fondoCardBodyColor text-cardTextColor flex  gap-3 w-fit h-[50px] items-center justify-center rounded-xl  '>
-              <div className='border-r border-bodyTextColor text-center flex justify-center px-[23px] '>
+            <div className='bg-fondoCardBodyColor text-cardTextColor flex  gap-3 w-fit h-[53px] items-center justify-center rounded-xl  '>
+              <div className='border-r border-bodyTextColor text-center flex justify-center px-[23px] h-[70%] items-center '>
                 <p  > Folowing</p>
               </div>
               <p className='  text-center flex justify-center  pl-[13px] pr-[23px] ' > {response?.following}</p>
 
             </div>
 
-            <div className='bg-fondoCardBodyColor text-cardTextColor flex  gap-3 w-fit h-[50px] items-center justify-center rounded-xl  '>
-              <div className='border-r border-bodyTextColor text-center flex justify-center  px-[23px] '>
+            <div className='bg-fondoCardBodyColor text-cardTextColor flex  gap-3 w-fit h-[53px] items-center justify-center rounded-xl  '>
+              <div className='border-r border-bodyTextColor text-center flex justify-center h-[70%] items-center   px-[23px] '>
                 <p  > Location</p>  
               </div>
               <p className='  text-center flex justify-center  pl-[13px] pr-[23px] ' > {response?.location}</p>

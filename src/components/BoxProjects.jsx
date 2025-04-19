@@ -8,7 +8,7 @@ export default function BoxProjects({ rep }) {
     const response = array
 
     return (
-        <div role='card section' className='mt-[16px] flex flex-col justify-center items-center gap-10 sm:grid  sm:grid-cols-2'>
+        <div role='card section' className='mt-[16px] flex flex-col justify-center  gap-10 sm:grid  sm:grid-cols-2'>
 
             {loading &&
                 <p>Cargando...</p>
