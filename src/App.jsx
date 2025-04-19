@@ -41,7 +41,7 @@ export default function App() {
 
     <div >
 
-      <div className='z-0 w-full h-[190px]  flex flex-col items-center relative'>
+      <div className='z-0 w-full h-[200px]  flex flex-col items-center relative'>
         <div role='header' className='w-full'>
           <figure role='imagen encabezado' className=' h-[230px] absolute w-full overflow-hidden' onClick={closeModal}>
             <img className='object-cover  h-full w-full' src="./resources/hero-image-github-profile.jpg" alt="" />
@@ -62,7 +62,7 @@ export default function App() {
 
       </div>
 
-      <main className='px-7 flex flex-col grow' onClick={closeModal}>
+      <main className='px-[90px] flex flex-col grow' onClick={closeModal}>
         <div className=' flex flex-col lg:flex-row lg:items-center  gap-11'>
 
           <div className=' z-50 w-[120px] h-[120px] rounded-xl bg-fondoGrisColor flex justify-center items-center'>
