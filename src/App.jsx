@@ -71,11 +71,11 @@ export default function App() {
             </figure>
           </div>
 
-          <div role='infContainer' className='flex flex-wrap gap-4 lg:mt-9'>
+          <div role='infContainer' className='flex flex-wrap gap-4 lg:mt-9 text-sm'>
 
-            <div className='bg-fondoCardBodyColor text-cardTextColor flex  gap-3 w-fit h-[50px] items-center justify-center rounded-xl  '>
+            <div className='bg-fondoCardBodyColor text-cardTextColor  flex  gap-3 w-fit h-[50px] items-center justify-center rounded-xl  '>
               <div className='border-r border-white text-center flex justify-center  px-4 '>
-                <p  > followers</p>
+                <p  > Followers</p>
               </div>
               <p className='  text-center flex justify-center pr-4 ' > {response?.followers}</p>
 
@@ -83,7 +83,7 @@ export default function App() {
 
             <div className='bg-fondoCardBodyColor text-cardTextColor flex  gap-3 w-fit h-[50px] items-center justify-center rounded-xl  '>
               <div className='border-r border-white text-center flex justify-center  px-4 '>
-                <p  > folowing</p>
+                <p  > Folowing</p>
               </div>
               <p className='  text-center flex justify-center  pr-4 ' > {response?.following}</p>
 
@@ -91,7 +91,7 @@ export default function App() {
 
             <div className='bg-fondoCardBodyColor text-cardTextColor flex  gap-3 w-fit h-[50px] items-center justify-center rounded-xl  '>
               <div className='border-r border-white text-center flex justify-center  px-4 '>
-                <p  > location</p>
+                <p  > Location</p>  
               </div>
               <p className='  text-center flex justify-center  pr-4 ' > {response?.location}</p>
             </div>
@@ -100,7 +100,7 @@ export default function App() {
 
         <div className=''>
           <div className='mt-[16px] text-cardTextColor'>
-            <h1 className='text-4xl '>{response?.name}</h1>
+            <h1 className='text-[30px] '>{response?.name}</h1>
             <h2 >{response?.bio}</h2>
           </div>
 
