@@ -8,7 +8,7 @@ export default function App() {
   const [search, setSearch] = useState("github")
   const [quickSearch, setQuickSearch] = useState("github")
   const [show, setShow] = useState(false)
-  // const [select, setSelect] = useData("")
+
 
 
   let url = `https://api.github.com/users/${search}`
@@ -126,8 +126,8 @@ export default function App() {
 
 
       </main>
-      <footer className='mt-10 flex justify-center items-center py-6 '>
-        <button className='text-cardTextColor' onClick={showMoreFunction} > { show? "Show less"  : " View all repositories" }</button>
+      <footer className='mt-10 flex justify-center items-center py-6  '>
+        <button className='text-cardTextColor cursor-pointer' onClick={showMoreFunction} > { show? "Show less"  : " View all repositories" }</button>
       </footer>
 
     </div>
