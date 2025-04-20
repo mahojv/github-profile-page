@@ -47,7 +47,7 @@ export default function App() {
             <img className='object-cover  h-full w-full' src="./resources/hero-image-github-profile.jpg" alt="" />
           </figure>
         </div>
-        <div className=' z-40 min-w-[360px]  lg:w-[500px] h-[53px] rounded-xl bg-fondoGrisColor flex items-center gap-4 mt-[34px] px-4  ' role='search'>
+        <div className=' z-40 min-w-[360px]  lg:w-[490px] h-[57px] rounded-lg bg-fondoGrisColor flex items-center gap-4 mt-[32px] px-4  ' role='search'>
           <figure><img src="./resources/Search.svg" alt="" /></figure>
           <input className='placeholder:text-cardTextColor w-full h-full text-cardTextColor' type="text" placeholder='Username' onKeyDown={handleKeyDown} onClick={toggleFunction} onChange={quickSearchFunction} />
         </div>
@@ -71,10 +71,10 @@ export default function App() {
             </figure>
           </div>
 
-          <div role='infContainer' className='flex flex-wrap gap-[22px] lg:mt-9 text-sm'>
+          <div role='infContainer' className='flex flex-wrap gap-[22px] lg:mt-9 text-sm font-medium '>
 
             <div className='bg-fondoCardBodyColor text-cardTextColor  flex  gap-3 w-fit h-[53px] items-center justify-center rounded-xl  '>
-              <div className='border-r font-medium border-bodyTextColor text-center flex justify-center  px-[23px] h-[70%] items-center '>
+              <div className='border-r  border-bodyTextColor/50   text-center flex justify-center  px-[23px] h-[70%] items-center '>
                 <p  > Followers</p>
               </div>
               <p className='  text-center flex justify-center pl-[13px] pr-[23px] ' > {response?.followers}</p>
@@ -82,7 +82,7 @@ export default function App() {
             </div>
 
             <div className='bg-fondoCardBodyColor text-cardTextColor flex  gap-3 w-fit h-[53px] items-center justify-center rounded-xl  '>
-              <div className='border-r border-bodyTextColor text-center flex justify-center px-[23px] h-[70%] items-center '>
+              <div className='border-r border-bodyTextColor/50  text-center flex justify-center px-[23px] h-[70%] items-center '>
                 <p  > Folowing</p>
               </div>
               <p className='  text-center flex justify-center  pl-[13px] pr-[23px] ' > {response?.following}</p>
@@ -90,7 +90,7 @@ export default function App() {
             </div>
 
             <div className='bg-fondoCardBodyColor text-cardTextColor flex  gap-3 w-fit h-[53px] items-center justify-center rounded-xl  '>
-              <div className='border-r border-bodyTextColor text-center flex justify-center h-[70%] items-center   px-[23px] '>
+              <div className='border-r border-bodyTextColor/50  text-center flex justify-center h-[70%] items-center   px-[23px] '>
                 <p  > Location</p>  
               </div>
               <p className='  text-center flex justify-center  pl-[13px] pr-[23px] ' > {response?.location}</p>
@@ -100,8 +100,8 @@ export default function App() {
 
         <div className=''>
           <div className='mt-[16px] text-cardTextColor'>
-            <h1 className='text-[30px] '>{response?.name}</h1>
-            <h2 className='mt-[2px]' >{response?.bio}</h2>
+            <h1 className='text-[32px] '>{response?.name}</h1>
+            <h2 className='mt-[2px] text-sm' >{response?.bio}</h2>
           </div>
 
 
