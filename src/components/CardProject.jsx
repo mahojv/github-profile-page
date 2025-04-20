@@ -15,17 +15,17 @@ export default function CardProject({html_url, name, description, stars, mit, fo
 
           {mit === "MIT" &&
             <span className='flex gap-1.5 text-sm items-center'>
-              <figure className='size-6'><img src="./resources/Chield_alt.svg" alt="" /></figure>
+              <figure className='size-6 w-[25px]'><img src="./resources/Chield_alt.svg" alt="" /></figure>
               <p>MIT</p>
             </span>
           }
 
           <span className='flex gap-1.5 text-sm items-center'>
-            <figure  className='size-6'><img src="./resources/Nesting.svg" alt="" /></figure>
+            <figure  className='size-6 w-[25px]'><img src="./resources/Nesting.svg" alt="" /></figure>
             <p>{forks}</p>
           </span>
           <span className='flex gap-1.5 text-sm items-center'>
-            <figure className='size-6'><img src="./resources/Star.svg" alt="" /></figure>
+            <figure className='size-6 w-[25px]'><img src="./resources/Star.svg" alt="" /></figure>
             <p>{stars}</p>
           </span>
           <span>
