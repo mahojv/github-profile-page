@@ -18,21 +18,26 @@ export default function BoxProjects({ rep }) {
 
             {Array.isArray(response) && response.length > 0 &&
 
-                response.map((project) => {
-                    return (
-                        <CardProject
-                            key={project.id}
-                            html_url={project.html_url}
-                            name={project.name}
-                            description={project.description}
-                            stars={project.stargazers_count}
-                            mit={project?.license?.spdx_id}
-                            forks={project.forks}
-                            update={project.updated_at}
+                response.map((project, index) => {
 
+                    if(index < 4){
+                        return (
+                            <CardProject
+                                key={project.id}
+                                html_url={project.html_url}
+                                name={project.name}
+                                description={project.description}
+                                stars={project.stargazers_count}
+                                mit={project?.license?.spdx_id}
+                                forks={project.forks}
+                                update={project.updated_at}
+    
+    
+                            />
+                        )
 
-                        />
-                    )
+                    }
+                    
                 })
             }
         </div>
