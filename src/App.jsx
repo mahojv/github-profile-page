@@ -7,6 +7,7 @@ export default function App() {
 
   const [search, setSearch] = useState("github")
   const [quickSearch, setQuickSearch] = useState("github")
+  const [show, setShow] = useState(false)
   // const [select, setSelect] = useData("")
 
 
@@ -34,7 +35,14 @@ export default function App() {
 
   function quickSearchFunction(e) {
 
-    setQuickSearch(e.target.value)
+    setTimeout(() => {
+      setQuickSearch(e.target.value)
+    }, 1500);
+    
+  }
+
+  function showMoreFunction() {
+    setShow(!show)
   }
 
   return (
@@ -107,6 +115,7 @@ export default function App() {
 
           <BoxProjects
             rep={response?.repos_url}
+            show={show}
           />
 
         </div>
@@ -114,7 +123,7 @@ export default function App() {
 
       </main>
       <footer className='mt-10 flex justify-center items-center py-6 '>
-        <a className='text-cardTextColor' href={response?.html_url} target='_blank' >view all repositories</a>
+        <button className='text-cardTextColor' onClick={showMoreFunction} > { show? "Show less"  : " View all repositories" }</button>
       </footer>
 
     </div>

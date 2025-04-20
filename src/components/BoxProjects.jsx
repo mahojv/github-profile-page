@@ -2,13 +2,13 @@ import React from 'react'
 import CardProject from './CardProject'
 import useData from "../hooks/useData"
 
-export default function BoxProjects({ rep }) {
+export default function BoxProjects({ rep ,show }) {
 
     const { loading, error, array } = useData(rep)
     const response = array
 
     return (
-        <div  className='mt-[36px] flex flex-col justify-center  gap-10 md:grid  md:grid-cols-2'>
+        <div  className='mt-[36px] flex flex-col justify-center  gap-10 md:grid  md:grid-cols-2 '>
 
             {loading &&
                 <p>Cargando...</p>
@@ -20,7 +20,9 @@ export default function BoxProjects({ rep }) {
 
                 response.map((project, index) => {
 
-                    if(index < 4){
+                    let cardsShow = show?  response.length : 4
+
+                    if(index < cardsShow){
                         return (
                             <CardProject
                                 key={project.id}

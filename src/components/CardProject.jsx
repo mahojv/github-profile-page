@@ -6,7 +6,7 @@ export default function CardProject({html_url, name, description, stars, mit, fo
   const elapsed = useFecha(update)
 
   return (
-    <a href={html_url} target='_blank' className='cursor-pointer'>
+    <a href={html_url} target='_blank' className='cursor-pointer '>
       <div  className=' rounded-lg repoCard  w-full   lg:max-w-none lg:max-h-none flex gap-3 flex-col px-[25px] justify-between lg:justify-center pt-[25px] py-[20px]  '>
         <h3 className='text-lg text-cardTextColor'>{name}</h3>
         <p className='text-sm' >{description}</p>
