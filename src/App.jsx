@@ -126,8 +126,8 @@ export default function App() {
 
 
       </main>
-      <footer className='mt-10 flex justify-center items-center py-6  '>
-        <button className='text-cardTextColor cursor-pointer' onClick={showMoreFunction} > { show? "Show less"  : " View all repositories" }</button>
+      <footer className='mt-[10px] flex justify-center items-center py-6  '>
+        <button className='text-cardTextColor cursor-pointer text-sm' onClick={showMoreFunction} > { show? "Show less"  : " View all repositories" }</button>
       </footer>
 
     </div>
