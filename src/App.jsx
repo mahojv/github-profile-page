@@ -37,7 +37,7 @@ export default function App() {
 
     setTimeout(() => {
       setQuickSearch(e.target.value)
-    }, 1500);
+    }, 1000);
     
   }
 
@@ -55,6 +55,10 @@ export default function App() {
             <img className='object-cover  h-full w-full' src="./resources/hero-image-github-profile.jpg" alt="" />
           </figure>
         </div>
+
+
+
+
         <div className=' z-40 min-w-[360px]  lg:w-[490px] h-[57px] rounded-lg bg-fondoGrisColor flex items-center gap-4 mt-[32px] px-4  ' >
           <figure><img src="./resources/Search.svg" alt="" /></figure>
           <input className='placeholder:text-cardTextColor w-full h-full text-cardTextColor' type="text" placeholder='Username' onKeyDown={handleKeyDown} onClick={toggleFunction} onChange={quickSearchFunction} />

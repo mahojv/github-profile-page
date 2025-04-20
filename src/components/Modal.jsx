@@ -14,8 +14,23 @@ export default function Modal({ quickSearch, setSearch, setToggle }) {
         setToggle(false)
     }
 
+    if(loading){
+       
+            return(
+
+                
+                <div class=" z-50 w-[500px] hidden lg:flex items-center gap-4 bg-fondoCardBodyColor p-2 rounded-xl absolute top-[94px] cursor-pointer ">
+                <div class="px-3 py-1 text-xs font-medium leading-none text-center text-blue-800 bg-blue-200 rounded-full animate-pulse dark:bg-blue-900 dark:text-blue-200">loading...</div>
+            </div>
+            )
+
+       
+    }
+
     return (
         <>
+
+            
 
             <div className='z-50 w-[500px] hidden lg:flex items-center gap-4 bg-fondoCardBodyColor p-2 rounded-xl absolute top-[94px] cursor-pointer' onClick={quickSearchSelect}>
                 <figure className='w-[100px] overflow-hidden rounded-xl'>
